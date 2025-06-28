@@ -1,3 +1,4 @@
+from file_handler import save_books
 def add_book(books):
     title = input("Enter book title: ")
     author = input("Enter book author: ")
@@ -8,5 +9,6 @@ def add_book(books):
         "Quantity": quantity
     }
     books.append(book)
+    save_books(books)
     print("Book added successfully!")
     

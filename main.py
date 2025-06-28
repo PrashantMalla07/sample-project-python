@@ -1,6 +1,8 @@
-books = []
+
+from file_handler import load_books
 from add_book import add_book
 from display_book import display_books
+books = load_books()
 while True:
     print("1. Add Book")
     print("2. Display Books")
